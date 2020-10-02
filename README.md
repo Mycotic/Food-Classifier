@@ -2,7 +2,6 @@
 Numen Rubino
 
 Sources: US Department of Agriculture
-https://fdc.nal.usda.gov/download-datasets.html
 
 ## Introduction
 The goal of this classifier is to identify foods containing meat based on the food's nutrients. This could be useful for market analysis or as a tool for vegetarians or people with allergies to find out if a food is likely to contain meat. I used recall as my classifier to minimize the how often the model mislabels meat specifically. My final model had a recall of 98%, which might be good enough for vegetarians but probably not for people with meat allergies.
@@ -32,6 +31,12 @@ False negative samples:
 ## Conclusions
 The model fit very well on the selected categories, and many of the false predictions were from errors in the labeling process. The main sources of real error seemed to be high protein foods, especially those containing whey or eggs. The next step to improving the model would be to train it specifically on these categories compared to meat, and removing categories that were perceived to be homogenous at first but ended up being mixed. After improving the model, it would be useful to see how class percentages compared to what we'd expect for categories like sweets - see if percentage of meat labeled sweets aligned with the number of gummies there were.
 
+## Last Comments
+Near the end of the modeling process I fixed an error that caused categories that weren't from the branded food dataset to not be included. It seems likely that this caused the model to perform worse. This is probably because some of those categories were less homogenous, resulting in a worse model. There also seems to be a lot of false positives predicting on water, which is certainly weird. These would have to be investigated before working further on this model. It's possible that only working with branded foods is the best way of working with this dataset. The graphics on this readme and the slides come from the original model and not the final model, but the visuals folder contains both.
 
+## Sources
 Download:
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2020-04-29.zip
+
+Source:
+https://fdc.nal.usda.gov/download-datasets.html
