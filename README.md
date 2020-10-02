@@ -18,6 +18,10 @@ Random forest and xgboost models were tried - the random forest performed better
 
 
 ## False Negative and False Positive Classes
+![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/fpos_eg.png)
+
+![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/fneg_eg.png)
+
 ![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/__fneg_percent.png)
 
 ![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/__fpos_percent.png)
