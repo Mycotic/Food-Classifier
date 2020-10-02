@@ -18,13 +18,20 @@ Random forest and xgboost models were tried - the random forest performed better
 
 
 ## False Negative and False Positive Classes
+False positive samples:
 ![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/fpos_eg.png)
-
+False negative samples:
 ![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/fneg_eg.png)
-
-![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/__fneg_percent.png)
-
+Graph of false positive categories:
 ![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/__fpos_percent.png)
+Graph of false negative categories:
+![](https://raw.githubusercontent.com/Mycotic/Food-Classifier/main/figs/__fneg_percent.png)
+False negative samples:
+
+
+## Conclusions
+The model fit very well on the selected categories, and many of the false predictions were from errors in the labeling process. The main sources of real error seemed to be high protein foods, especially those containing whey or eggs. The next step to improving the model would be to train it specifically on these categories compared to meat, and removing categories that were perceived to be homogenous at first but ended up being mixed. After improving the model, it would be useful to see how class percentages compared to what we'd expect for categories like sweets - see if percentage of meat labeled sweets aligned with the number of gummies there were.
+
 
 Download:
 https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2020-04-29.zip
